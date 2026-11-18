@@ -1,0 +1,21 @@
+# AI Customer Support Agent — Python Dependencies
+# Install all with: pip install -r requirements.txt
+
+# ── Core Framework ────────────────────────────────────────────────────────────
+fastapi>=0.111.0          # Web framework for building the REST API
+uvicorn[standard]>=0.29.0 # ASGI server to run FastAPI
+python-multipart>=0.0.9   # Required for FastAPI UploadFile / multipart form-data (POST /voice)
+
+# ── AI / Gemini ───────────────────────────────────────────────────────────────
+groq>=0.9.0                 # Groq's official API SDK
+
+# ── Environment / Config ──────────────────────────────────────────────────────
+python-dotenv>=1.0.0      # Loads GOOGLE_API_KEY from .env file
+
+# ── Data Validation ───────────────────────────────────────────────────────────
+pydantic>=2.0.0           # Used by FastAPI for request/response models (models.py)
+
+# ── Embeddings / NLP ──────────────────────────────────────────────────────────
+sentence-transformers>=3.0.0 # Local sentence embeddings generation
+chromadb>=0.5.0              # Local vector database for storage and semantic search
+pypdf>=4.0.0                 # PDF reading and text extraction
