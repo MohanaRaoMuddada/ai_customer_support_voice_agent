@@ -314,12 +314,3 @@ flowchart LR
 6. **Augmentation**: Chunks injected into the Groq Llama system prompt.
 
 ---
-
-## 📄 Resume Highlights
-
-- **Voice AI Pipeline**: Designed end-to-end audio → STT → NLP → TTS pipeline integrating **Groq Whisper Large V3 Turbo** (216× real-time transcription) with browser-native **SpeechSynthesis API** for zero-latency voice output.
-- **AI & RAG Engineering**: Built local Retrieval-Augmented Generation using **ChromaDB** and **Sentence-Transformers** (`all-MiniLM-L6-v2`), converting raw PDFs into semantic vector search spaces.
-- **FastAPI Backend**: Production-ready REST API with Pydantic schema validation, custom global error normalization, and thread-pool task delegation for blocking I/O.
-- **Modular Architecture**: Isolated voice, agent, RAG, database, and embedding layers — each independently testable and replaceable.
-- **Transactional Security**: Parameterized SQL queries throughout, preventing SQL injection vulnerabilities.
-- **LLM Orchestration**: Structured context-aware prompts combining SQL records, vector database extracts, and system constraints for accurate, grounded responses.
